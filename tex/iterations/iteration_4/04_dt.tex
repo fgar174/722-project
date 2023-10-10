@@ -1,0 +1,34 @@
+\part{Data Transformation}
+
+    In traditional data mining pipelines, data transformation is a crucial step that involves a range of activities like feature selection, data balancing, normalization, and so on. However, in the context of this study, these operations are not performed as standalone procedures for the following reasons:
+
+    \begin{enumerate}
+        \item \textbf{In-built Mechanisms}: The data mining methods employed in this work have their own built-in mechanisms for feature selection and data balancing. Performing these operations externally could interfere with the algorithms' native capabilities and lead to suboptimal results.
+
+        \item \textbf{Redundancy}: Given that the algorithms already perform these operations, conducting them independently would be redundant and could increase the computational burden without necessarily improving the model performance.
+
+        \item \textbf{Parameter Tuning}: The algorithms in use have their own hyperparameters that are designed to control aspects like feature importance and class imbalance. Manipulating the data beforehand could render these hyperparameters less effective.
+
+        \item \textbf{Validation and Evaluation}: The effectiveness of the built-in data transformation techniques will be assessed in subsequent sections, ensuring a comprehensive evaluation of the algorithms' performance without external interference.
+    \end{enumerate}
+
+    Detailed explanations for how each algorithm performs its own data transformation will be covered in the following sections.
+
+
+    \section{Where to find this phase in the code?}
+
+        The is a file, inside the folder python, called iteration\_three.py.
+        \\
+        \\
+        In the line 851 there is a method that execute the whole workflow.
+
+        \begin{verbatim}
+            country_manager = ProjectManager(
+                generate_images_du_02=True,
+            )
+            country_manager.du_02()
+            country_manager.dp_03()
+            country_manager.dt_04()
+        \end{verbatim}
+
+        All the images are being generate by code and referenced by using LatEx to create this document.

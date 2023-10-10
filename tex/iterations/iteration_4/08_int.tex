@@ -1,0 +1,56 @@
+\part{Interpretation}
+
+
+    \section{Logistic Regression}
+
+        Logistic regression, after undergoing a rigorous tuning process, still did not yield satisfactory results. The model's accuracy, which is a key performance metric that gauges the ratio of correct predictions to the total number of observations, only reached a moderate 62\%. Furthermore, its precision, which reflects how many of the predicted positive instances were actually positive, was also underwhelming at 57\%.
+
+        It is notable that during the feature selection process, the logistic regression model essentially deemed most features as non-contributory, retaining only two for its predictive processes. Precision and accuracy are critical in determining the reliability of a model's predictions. The fact that both these metrics returned sub-optimal values implies that the model might not be effectively capturing the underlying patterns of the data.
+
+        Given these observations, it's evident that logistic regression may not be the best-suited model for this particular dataset, especially if the goal is to identify and assess the importance of contributing variables. It's crucial to consider other machine learning algorithms or techniques that might offer a more insightful understanding of the data and produce better predictive results.
+
+
+    \section{Bernoulli Naive Bayes}
+
+        Bernoulli Naive Bayes, much like the previously discussed logistic regression model, underwent meticulous tuning but unfortunately did not deliver optimal results. Its accuracy, a pivotal metric that measures the proportion of correct predictions in relation to the total dataset, reached only a modest 62\%. In addition, its precision, which assesses the correctness of instances that were predicted as positive, stood at a less-than-impressive 57\%.
+
+        Given that both precision and accuracy are vital for evaluating the trustworthiness and efficiency of a model's predictions, the unsatisfactory values on these metrics suggest that the model might be struggling to recognize and represent the intrinsic patterns within the data.
+
+        From this analysis, it becomes clear that the Bernoulli Naive Bayes might not be the ideal model for this specific dataset, especially if the primary objective is to discern and understand the significance of various contributing variables. It would be beneficial to explore other machine learning models or methodologies that might provide a more nuanced interpretation of the data and yield superior predictive outcomes.
+
+
+    \section{Classification Tree, Gradient Boosting, and Random Forest}
+
+        In our quest for effective algorithms suitable for our dataset, three models -- Classification Tree, Random Forest, and Gradient Boosting -- emerged as particularly effective. Surprisingly, these models did not rely on a balancing strategy, yet demonstrated superior performance.
+
+        \subsection{Performance Analysis}
+
+            \subsubsection{Random Forest}
+                This ensemble method, renowned for its robustness and adaptability, yielded outstanding results. With near-perfect accuracy, it classified almost the entire dataset correctly. Additionally, a precision of about 93\% and a recall rate of over 85\% emphasize its efficacy.
+
+            \subsubsection{Gradient Boosting}
+                Another ensemble method, Gradient Boosting showcased the highest precision. Notwithstanding its precision, there was a slight reduction in accuracy, erring in the classification of just one instance in terms of expected obesity rate. Such trade-offs might be viable in contexts prioritizing precision.
+
+            \subsubsection{Classification Tree}
+                Though the Classification Tree did not achieve metrics comparable to the Random Forest, it still performed notably. A balanced accuracy of 91\% coupled with an 89\% recall rate underscores its ability to deliver reliable predictions.
+
+            \subsubsection{Important Features}
+                While all three models showcased formidable predictive capabilities, their individual strengths cater to distinct requirements. The ensemble techniques of Random Forest and Gradient Boosting emerged particularly adept for our dataset. However, the Classification Tree's significant performance also merits consideration, especially when interpretability is paramount.
+
+                Using the good results from the three models, we'll look at their main features. We'll compare them to see which factors are common in reaching our goal
+
+        \subsection{Model Selection and Analysis}
+
+            When picking the best models, I first consider precision. The \textit{Gradient Boosting} (\figurename~\ref{fig:dm-gradient-booting}) model emerges as the front-runner in this criterion, succeeded by the \textit{Random Forest}(\figurename~\ref{fig:dm-random-forest}) owing to its high accuracy, and lastly, the \textit{Decision Tree} (\figurename~\ref{fig:dm-decision-tree}).
+
+            \subsubsection{Feature Importance}
+
+                Upon examining the salient factors, or '\features\', employed by these models, a consensus is observed: all underscore the significance of '\pig consumption\'. In essence, these models unanimously hint at a pivotal role of pork consumption. Other features as liter of alcohol per capita, negative effects, fish and ships and life ladder are also important.
+
+            \subsubsection{Diving Deeper}
+
+                Despite the conspicuous emphasis on pig consumption, our inquiry ought not to culminate here. A deeper exploration is warranted to discern how each model formulates its decisions. Which attributes edge countries closer or farther from our objective? Presently, the importance of pork consumption in our study is undeniable. However, other factors merit scrutiny as well.
+
+            \subsubsection{Future Steps}
+
+                The subsequent phase involves refining our model to enhance its transparency. This will facilitate a clearer understanding of its decision-making process and the influence of factors, particularly pork consumption.

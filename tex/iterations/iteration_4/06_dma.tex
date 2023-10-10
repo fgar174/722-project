@@ -1,0 +1,49 @@
+\part{Data Mining Algorithm}
+    \section{Model Selection}
+        Some options are available for classification tasks
+
+        \begin{itemize}
+
+            \item \textbf{Decision Trees}
+            \begin{itemize}
+                \item \textit{Description:} Algorithms like CART (Classification and Regression Trees) inherently perform feature selection and provide a straightforward interpretation of important attributes.
+                \item \textit{Advantages:} Easy to interpret, perform implicit feature selection.
+                \item \textit{Disadvantages:} Prone to overfitting, may not work well for complex relationships.
+            \end{itemize}
+
+            \item \textbf{Random Forest}
+            \begin{itemize}
+                \item \textit{Description:} An ensemble method that can offer a ranked list of feature importances.
+                \item \textit{Advantages:} Less prone to overfitting, can handle large datasets, provides feature importance scores.
+                \item \textit{Disadvantages:} Can be computationally expensive, less interpretable than decision trees.
+            \end{itemize}
+
+            \item \textbf{Gradient Boosting}
+            \begin{itemize}
+                \item \textit{Description:} Like Random Forest, gradient boosting methods can also provide insights into feature importance.
+                \item \textit{Advantages:} Effective for high-dimensional datasets, optimizes a loss function to identify important variables, provides feature importance scores.
+                \item \textit{Disadvantages:} Sensitive to overfitting if not properly tuned, computationally expensive.
+            \end{itemize}
+
+            \item \textbf{Logistic Regression with L1 or L2 Regularization}
+            \begin{itemize}
+                \item \textit{Description:} Though a linear model, logistic regression with regularization can help in identifying the most important predictors.
+                \item \textit{Advantages:} Simple, fast, and provides feature coefficients that can be interpreted as importances.
+                \item \textit{Disadvantages:} Assumes a linear relationship between features and outcome, which may not always hold.
+            \end{itemize}
+
+            \item \textbf{Support Vector Machines with Linear Kernel}
+            \begin{itemize}
+                \item \textit{Description:} When using a linear kernel, the SVM algorithm provides coefficients that can be interpreted as feature importances, though this requires some caution in interpretation.
+                \item \textit{Advantages:} Can handle high-dimensional spaces, provides feature coefficients in the case of a linear kernel.
+                \item \textit{Disadvantages:} Difficult to interpret, computationally intensive for large datasets.
+            \end{itemize}
+
+            \item \textbf{XGBoost}
+            \begin{itemize}
+                \item \textit{Advantages:} High performance, can handle missing values, provides feature importance scores.
+                \item \textit{Disadvantages:} Requires careful tuning to avoid overfitting, computationally expensive.
+            \end{itemize}
+
+        \end{itemize}
+

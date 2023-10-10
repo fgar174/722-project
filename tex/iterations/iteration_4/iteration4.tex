@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{float}
+
+\makeatletter
+\@addtoreset{section}{part}
+\makeatother
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\title{Addressing the Global Obesity Challenge: An Integrated Approach for a Better Management of Public Health Reducing Obesity}
+\author{Fabio Garcia}
+\date{\today}
+
+\newcommand{\duCollectInitialData}{Collect initial data}
+\newcommand{\duDescribeTheData}{Describe the data}
+\newcommand{\duExploreTheData}{Explore the data}
+\newcommand{\dsSmoking}{Prevalence of smoking across the world}
+\newcommand{\dsHunger}{Hunger Index}
+\newcommand{\dsAlcohol}{Alcohol Consumption}
+\newcommand{\dsHappiness}{Happiness Report}
+\newcommand{\dsMeat}{Meat Consumption}
+\newcommand{\dsObesity}{Obesity Dataset}
+\newcommand{\dsCountries}{Dataset Countries}
+\newcommand{\dsMissingCountries}{Dataset Missing Countries}
+\newcommand{\dsIntegratedDataset}{Integrated Dataset}
+
+\begin{document}
+
+    \maketitle
+    \tableofcontents
+
+    \newpage
+    \input{01_bu.tex}
+    \newpage
+
+    \newpage
+    \input{02_du.tex}
+    \newpage
+
+    \newpage
+    \input{03_dp.tex}
+    \newpage
+
+    \newpage
+    \input{04_dt.tex}
+    \newpage
+
+    \newpage
+    \input{05_dmm.tex}
+    \newpage
+
+    \newpage
+    \input{06_dma.tex}
+    \newpage
+
+    \newpage
+    \input{07_dm.tex}
+    \newpage
+
+    \newpage
+    \input{08_int.tex}
+    \newpage
+
+    \newpage
+    \input{annexes.tex}
+    \newpage
+
+    \newpage
+    \input{disclaimer.tex}
+    \newpage
+
+
+\end{document}
