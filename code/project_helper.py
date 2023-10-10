@@ -12,9 +12,9 @@ from sklearn import ensemble, linear_model, tree, model_selection, svm, naive_ba
     feature_selection, pipeline
 from sklearn.tree import _tree
 
-PATH_IMAGES = '../tex/iterations/iteration_3/images/'
+PATH_IMAGES = '../tex/iterations/iteration_4/images/'
 
-databases_path = './datasets/'
+databases_path = '../datasets/'
 
 
 class DataFramesCSV(enum.Enum):
