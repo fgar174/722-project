@@ -2,5 +2,4 @@
 .idea
 ./python/.spyproject
 __pycache__/
-*.png
 tex/out
